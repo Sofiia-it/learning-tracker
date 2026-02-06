@@ -1,3 +1,7 @@
+# Personal Learning Tracker
+# Version: 1.0
+# Author: Sofiia
+
 from datetime import datetime
 print("=== Personal Learning Tracker ===")
 
@@ -20,9 +24,11 @@ while True:
     elif choice == "2":
       try:
          with open("learning_log.txt", "r", encoding="utf-8") as file:
+             lines = file.readlines()
              print("\nYour learning activities:")
-             for i, line in enumerate(file, start=1):
+             for i, line in enumerate(lines, start=1):
                  print(f"{i}. {line.strip()}")
+             print(f"\nTotal activities: {len(lines)}")
       except FileNotFoundError:
           print("No activities yet.")
 
@@ -31,4 +37,5 @@ while True:
         break
 
     else:
+
         print("Invalid option. Try again.")
