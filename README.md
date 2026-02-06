@@ -8,6 +8,7 @@ A simple command-line application written in Python that helps track daily learn
 - Add new learning activities
 - Automatically saves the date
 - View all saved activities with numbering
+- Displays total number of activities
 - Stores data in a text file
 
 ## Technologies
@@ -15,7 +16,15 @@ A simple command-line application written in Python that helps track daily learn
 - File handling
 - Command-line interface (CLI)
 
-## How to run
-```bash
-python tracker.py
+## Example output
+`text
+Choose an option:
+1. Add new learning activity
+2. View all activities
+3. Exit
+
+What did you learn today?
+Python file handling
+
+Saved successfully!
 ```
