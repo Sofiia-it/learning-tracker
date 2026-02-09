@@ -17,7 +17,7 @@ A simple command-line application written in Python that helps track daily learn
 - Command-line interface (CLI)
 
 ## Example output
-`text
+```markdown
 Choose an option:
 1. Add new learning activity
 2. View all activities
